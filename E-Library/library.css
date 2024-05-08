@@ -1,0 +1,236 @@
+#Big-Container{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+#myVideo{
+   object-fit: cover;
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+.Content-1{
+    padding-left: 21rem;
+    font-size: 2rem;
+    z-index: 1;
+    color: white;
+}
+#Container-1{
+    display: flex;
+    flex-direction: column;
+}
+.MContent{
+    z-index: 1;
+}
+#Books{
+    margin-left: 15rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+.B1,.B2,.B3{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-radius: 2rem;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+a:hover{
+    background-color: transparent;
+    color: white;
+    border: rgb(136, 135, 135) 0.1rem solid;
+    cursor: pointer;
+}
+img{
+    border-radius: 1rem;
+}
+.B2,.B3{
+    margin-left: 10rem;
+} 
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color:rgb(0, 0, 0); /* Black*/
+    background-image: black;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    font-family:'roboto',sans-serif;
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color:#6d6d6d;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #5c5c5c;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  h2{
+    color: rgb(0, 0, 0);
+  }
+  hr{
+    color: #1a05fc;
+  }
+  h1{
+    color: white;
+    text-align: center;
+  }
+  * {
+    box-sizing: border-box;
+  }  
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 430px;
+    padding: 10px;
+    height: 400px; /* Should be removed. Only for demonstration */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) */
+  }
+  img:hover{
+    transform: scale(1.1);
+  }
+  img{
+    transition: all 1s;
+    border-radius: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.column h2{
+    color: white;
+}  
+
+@keyframes moveInButton{
+  0%{
+      opacity:0;
+      transform:translate(30px);
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+
+}
+
+.btn:link,
+.btn:visited{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+  font-size: medium;
+}
+
+.btn:hover{
+  transform:  translateY(-3px);
+  box-shadow: 0 10px 20px rgb(255, 255, 255);
+}
+
+.btn:active{
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgb(255, 255, 255);
+}
+.btn-white{
+  background-color: white;
+  color: black;
+} 
+
+.btn:after{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:-1;
+  transition: all .4s;
+}  
+
+.btn-white::after{
+  background-color: white;
+}
+
+.btn:hover::after{
+  transform: scale(1.4) scale(1.6);
+  opacity:0;
+}
+
+.btn-animated{
+animation: moveInButton .5s ease-out .75s;
+animation-fill-mode: backwards;
+}
+
+body{
+    background-color: black;
+}

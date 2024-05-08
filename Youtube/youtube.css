@@ -1,0 +1,64 @@
+#Big-Container{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+#myVideo{
+   object-fit: cover;
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+.Content-1{
+    padding-left: 52rem;
+    font-size: 3rem;
+    z-index: 1;
+    color: white;
+}
+#Container-1{
+    display: flex;
+    flex-direction: column;
+}
+.MContent{
+    z-index: 1;
+}
+#Books{
+    margin-left: 3rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+}
+.B1,.B2,.B3,.B4,.B5{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    border-radius: 2rem;
+    padding-left: 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+a:hover{
+    background-color: transparent;
+    color: white;
+    border: rgb(136, 135, 135) 0.1rem solid;
+    cursor: pointer;
+}
+img{
+    border-radius: 1rem;
+}
+.B2,.B3,.B4,.B5{
+    margin-left: 10rem;
+}

@@ -1,0 +1,131 @@
+.logo img{
+  width: 100px;
+  height: auto;
+  float: left;
+}
+*{
+  margin:0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'poppins';
+  background-color: #ecedef;
+  /* background: url(https://i.pinimg.com/originals/40/42/ec/4042ecaade437173ee1ef35c7a303024.png); */
+  line-height: 1.7;
+}
+/*.logo{
+  float: left;
+  padding-right: 610px;
+  color: white;
+  font-size: 40PX;
+  font-family: serif ;
+}*/
+header{
+  font-size: 100px;
+  color: #eceff3;
+
+}
+a{
+   text-decoration: none;
+   color: black;
+
+}
+.container{
+  max-width: 430px;
+  margin: 30px auto;
+  padding: 20px;
+
+
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+@media(max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+.form-wrap{
+  background :rgba(0, 0, 0, 0.5);
+  padding: 15px 25px;
+  margin:6% 40% 0% 40%;
+  color:#f1f1f1;
+  border-top: 4px solid white;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+.form-wrap h1,
+p{
+  text-align: center;
+  justify-content: center;
+  color: white;
+  border-bottom: 1px solid silver;
+}
+.form-wrap .form-group{
+  margin-top: 15px;
+}
+.form-wrap .form-group label{
+  display: block;
+  color:  #FFFFFF;
+  text-align: left;
+}
+.form-wrap .form-group input{
+  width: 100%;
+  padding: 10px;
+  border-radius: #ddd 1px solid;
+  border-radius: 5px;
+}
+.form-wrap button{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: white;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #2691d9;
+  font-family: 'poppins';
+  font-size: 15px;
+  transition: 1s;
+  border-radius: 10px;
+
+}
+.dude{
+  color: #1010c9;
+}
+.form-wrap button:hover{
+  background-color:#ffffff;
+  transition: 1s;
+}
+.form-wrap button-text{
+  text-decoration-color: white;
+  font-size: 13px;
+  margin-top: 20px;
+}
+footer{
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
+}
+footer a{
+  color: black;
+}
+button:hover{
+	border-color: #000000;
+	transition: .5s;
+  transform:  translateY(-3px);
+  box-shadow: 0 10px 20px rgb(255, 255, 255);
+}
